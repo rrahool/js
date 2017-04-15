@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to JS</title>
+    <script language="javascript">
+//        var firstName = "Rahul";
+//        var lastName = "Biswas";
+//
+//        document.write(firstName+" "+lastName);
+//        //alert(firstName+" "+lastName);
+//        alert("Hello JavaScript World! "+57);
+        function addition(){
+            var num1 = document.getElementById("Number1").value;
+            var num2 = document.getElementById("Number2").value;
+
+            //alert(num1+" "+num2);
+            var result = parseInt(num1)  + parseInt(num2);
+            var str = num1 + " + " + num2 + " = " + result;
+            document.write(str);
+        }
+    </script>
+</head>
+<body>
+    <label>Number 1:</label>
+    <input type="number" id="Number1">
+    <br/>
+    <br/>
+    <label>Number 2:</label>
+    <input type="number" id="Number2">
+    <br/>
+    <br/>
+    <button onclick="addition()">Addition</button>
+
+</body>
+</html>

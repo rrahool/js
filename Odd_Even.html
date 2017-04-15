@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odd_Even</title>
+    <script language="Javascript">
+        function checkOddEven(){
+            var number = parseInt(document.getElementById("number").value);
+
+            if(number % 2 == 0 )
+                alert("The Number: " + number + " is Even");
+            else
+                alert("The Number: " + number + " is Odd");
+        } //end of checkOddEven
+    </script>
+</head>
+<body>
+    <label>Enter a Number: </label>
+    <input type="number" id="number">
+    <button onclick="checkOddEven()">Check Odd or Even</button>
+</body>
+</html>
